@@ -1,0 +1,30 @@
+{
+  "bindings": [
+    {
+      "authLevel": "anonymous",
+      "type": "httpTrigger",
+      "direction": "in",
+      "name": "req"
+    },
+    {
+      "type": "http",
+      "direction": "out",
+      "name": "res"
+    },
+    {
+      "type": "blob",
+      "name": "inputBlob",
+      "path": "botstorage/{userid}",
+      "connection": "azurefunctionsd1e2d6ab_STORAGE",
+      "direction": "in"
+    },
+    {
+      "type": "blob",
+      "name": "outputBlob",
+      "path": "botstorage/{userid}",
+      "connection": "azurefunctionsd1e2d6ab_STORAGE",
+      "direction": "out"
+    }
+  ],
+  "disabled": false
+}
